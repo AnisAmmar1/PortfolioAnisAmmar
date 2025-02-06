@@ -4,14 +4,12 @@ import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-import cvFile from "../../../"; // Assurez-vous que le chemin est correct.
 import { AiOutlineDownload } from "react-icons/ai";
 
 function Home() {
   const handleDownload = () => {
   
     const link = document.createElement("a");
-    link.href = cvFile; 
     link.download = "Anis_Ammar_CV.pdf"; 
     link.click();
   };
